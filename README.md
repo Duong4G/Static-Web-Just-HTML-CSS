@@ -1,3 +1,3 @@
 # Static-Web-Just-HTML-CSS
 
-Start with Home.HTML
+Start with Home.html
