@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>Lớp Và Đối Tượng</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type"text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="header">
+			<a href="./Home.html" target="_self" style="text-decoration: none;"><img id="banner" src="Hinhanh/2.PNG"></a>
+			<div id="menu">
+				<ul>
+					<li><a href="./Home.html"> Home </a></li>
+					<li>
+						<a href="#" style="color:#F9F400"> Học Java </a>
+						<ul class="sub-menu">
+							<li><a href="./JavaCoBan.html">Cơ bản</a></li>
+							<li><a href="./JavaSpring.html">Java Spring</a></li>
+						</ul>
+					</li>
+					<li><a href="./LienHe.html"> Liên Hệ </a></li>
+					<li><a href="./GioiThieu.html"> Giới Thiệu </a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100005361367805" target="_blank"> Fanpage </a></li> 
+					<li><a href="./DangNhap.html"> Đăng Nhập </a></li> 
+					<li><a href="./DangKy.html"> Đăng Ký </a></li> 
+				</ul>
+				
+			</div>
+		</div>
+		<div id="content" style="height:2300px;">
+			<div id="right">
+				<a href="#"><img src="Hinhanh/quangcao8.PNG"></a>
+				<p><a href="#">Mở khóa học lập trình Ruby</a></p>
+				<a href="#"><img src="Hinhanh/quangcao2.PNG"></a>
+				<p><a href="#">Hosting tốc độ nhanh, bảo mật, ổn định</a></p>
+				<a href="#"><img src="Hinhanh/quangcao5.PNG"></a>
+				<p><a href="#">3 loại thiết kế banner bạn nên biết</a></p>
+				<a href="#"><img src="Hinhanh/quangcao1.PNG"></a>
+				<p><a href="#">Khóa học thiết kế quảng cáo Avatar FB</a></p>
+			</div>
+			<div id="menudoc">
+				<ul>
+					<li><a href="./Kieudulieu.html">Các kiểu dữ kiệu cơ bản</a></li>
+					<li><a href="./Array.html">Array</a></li>
+					<li>
+						<a href="#">Vòng lặp</a>
+						<ul class="sub-menudoc">
+							<li><a href="./For.html">For</a></li>
+							<li><a href="./While.html">While</a></li>
+							<li><a href="./Dowhile.html">Do-while</a></li>
+						</ul>
+					</li>
+					<li><a href="./Ifelse.html">If-else</a></li>
+					<li><a href="./Switchcase.html">Switch-case</a></li>
+					<li><a href="./Lopvadoituong.html" style="color:white;">Lớp và đối tượng</a></li>
+				</ul>
+			</div>
+			<div id="text">
+				<h3>Lớp và Đối tượng</h3>
+				<div class="vanban">
+					<br>
+					Trong kỹ thuật lập trình hướng đối tượng, chúng ta thiết kế một chương trình bởi sử dụng các lớp và các đối tượng.
+				</div>
+				<p>1. Khái niệm cơ bản:<br></p>
+				<div class="vanban">
+					<b>Object</b> - Đối tượng là thực thể mang tính vật lý cũng như mang tính logic, trong khi lớp chỉ là thực thể logic. 
+					Đối tượng có các trạng thái và các hành vi. Ví dụ: Một dog có trạng thái là color, name, breed (dòng dõi) và cũng có các hành vi: Wag (vẫy đuôi), bark (sủa), eat (ăn). 
+					Một đối tượng là một instance (ví dụ,trường hợp) của một lớp.<br><br>
+					<b>Class</b> - Một lớp là một nhóm các đối tượng mà có các thuộc tính chung. Lớp là một Template hoặc bản thiết kế từ đó đối tượng được tạo.
+				</div>
+				<p>2. Đối tượng trong java:<br></p>
+				<div class="vanban">
+					Đó là một thực thể có trạng thái và hành vi, ví dụ như bàn, ghế, xe con, mèo, … 
+					Nó có thể mang tính vật lý hoặc logic. Ví dụ về logic đó là Banking system.<br><br>
+					Một đối tượng có ba đặc trưng sau:
+					<ul>
+						<li><b>Trạng thái</b>: biểu diễn dữ liệu (giá trị) của một đối tượng.</li>
+						<li><b>Hành vi</b>: biểu diễn hành vi (tính năng) của một đối tượng như gửi tiền vào, rút tiền ra, …</li>
+						<li><b>Nhận diện</b>: việc nhận diện đối tượng được triển khai thông qua một ID duy nhất. 
+						Giá trị của ID là không thể nhìn thấy với người dùng bên ngoài. 
+						Nhưng nó được sử dụng nội tại bởi JVM để nhận diện mỗi đối tượng một cách duy nhất.</li>
+						
+					</ul><br>
+					Ví dụ: Bút là một đối tượng. Nó có tên là Thiên Long, có màu trắng, … 
+					được xem như là trạng thái của nó. Nó được sử dụng để viết, do đó viết là hành vi của nó.
+				</div>
+				<p>3. Lớp trong java:<br></p>
+				<div class="vanban">
+					Một lớp là một nhóm các đối tượng mà có các thuộc tính chung. 
+					Lớp là một Template hoặc bản thiết kế từ đó đối tượng được tạo. Một lớp trong Java có thể bao gồm:
+					<ul>
+						<li>Thành viên dữ liệu</li>
+						<li>Phương thức</li>
+						<li>Constructor</li>
+						<li>Block</li>
+						<li>Lớp và Interface</li>
+					</ul>
+					<br>
+					Cú pháp để khai báo một lớp
+					<img src="Hinhanh/lopvadoituong1.PNG">
+				</div>
+				<p>4. Phương thức trong java:<br></p>
+				<div class="vanban">
+					Trong Java, một phương thức là khá giống hàm, được sử dụng để trưng bày hành vi của một đối tượng. 
+					Phương thức giúp code tăng tính tái sử dụng và tối ưu hóa code.
+					<br><br>
+					Từ khóa new được sử dụng để cấp phát bộ nhớ tại runtime.
+				</div>
+				<p>5. Constructor trong Java:<br></p>
+				<div class="vanban">
+					Khi bàn luận về các lớp, một trong những chủ đề quan trọng là các constructor. Mỗi lớp có một constructor. 
+					Nếu chúng ta không viết một constructor một cách rõ ràng cho một lớp thì bộ biên dịch Java xây dựng một constructor mặc định cho lớp đó.
+					<br><br>
+					Mỗi khi một đối tượng mới được tạo ra, ít nhất một constructor sẽ được gọi. 
+					Quy tắc chính của các constructor là chúng có cùng tên như lớp đó. Một lớp có thể có nhiều hơn một constructor.
+					<br><br>
+					Sau đây là ví dụ về một constructor:
+					<img src="Hinhanh/lopvadoituong2.PNG">
+				</div>
+				<p>6. Tạo một đối tượng trong java:<br></p>
+				<div class="vanban">
+					Như đã đề cập trước đó, một lớp cung cấp bản thiết kế cho các đối tượng. 
+					Vì thế, về cơ bản, một đối tượng được tạo từ một lớp. Trong Java, từ khóa new được sử dụng để tạo một đối tượng mới.
+					<br><br>
+					Có ba bước khi tạo một đối tượng từ một lớp:
+					<ul>
+						<li>Khai báo: Một khai báo biến với một tên biến với một loại đối tượng.</li>
+						<li>Cài đặt: Từ khóa new được sử dụng để tạo đối tượng</li>
+						<li>Khởi tạo: Từ khóa new được theo sau bởi một lời gọi một constructor. Gọi hàm này khởi tạo đối tượng mới.</li>
+					</ul><br>
+					Dưới đây là ví dụ về tạo một đối tượng:
+					<img src="Hinhanh/lopvadoituong3.PNG"><br><br>
+					Nếu chúng ta biên dịch và chạy chương trình, nó sẽ cho kết quả sau:
+					<img src="Hinhanh/lopvadoituong4.PNG">
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="thongtin">
+				Email: vinacafe11vn@gmail.com
+			</div>
+			<div id="menucuoi">
+				<ul>
+					<li><a href="./Home.html">Home</a></li>
+					<li><a href="./DangKy.html">Đăng ký</a></li>
+					<li><a href="./LienHe.html">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div id="copyright">Copyright 2018 &copy; Trương Hoàng Dương</div>
+		</div>
+	</body>
+</html>

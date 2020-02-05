@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Inversion of Control</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type"text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="header">
+			<a href="./Home.html" target="_self" style="text-decoration: none;"><img id="banner" src="Hinhanh/2.PNG"></a>
+			<div id="menu">
+				<ul>
+					<li><a href="./Home.html"> Home </a></li>
+					<li>
+						<a href="#" style="color:#F9F400"> Học Java </a>
+						<ul class="sub-menu">
+							<li><a href="./JavaCoBan.html">Cơ bản</a></li>
+							<li><a href="./JavaSpring.html">Java Spring</a></li>
+						</ul>
+					</li>
+					<li><a href="./LienHe.html"> Liên Hệ </a></li>
+					<li><a href="./GioiThieu.html"> Giới Thiệu </a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100005361367805" target="_blank"> Fanpage </a></li> 
+					<li><a href="./DangNhap.html"> Đăng Nhập </a></li> 
+					<li><a href="./DangKy.html"> Đăng Ký </a></li> 
+				</ul>
+				
+			</div>
+		</div>
+		<div id="content" style="height:1400px;">
+			<div id="right">
+				<a href="#"><img src="Hinhanh/quangcao8.PNG"></a>
+				<p><a href="#">Mở khóa học lập trình Ruby</a></p>
+				<a href="#"><img src="Hinhanh/quangcao2.PNG"></a>
+				<p><a href="#">Hosting tốc độ nhanh, bảo mật, ổn định</a></p>
+			</div>
+			<div id="menudoc">
+				<ul>
+					<li><a href="./Gioithieuspring.html">Giới thiệu</a></li>
+					<li><a href="./Cacthanhphanspring.html">Các thành phần</a></li>
+					<li>
+						<a href="./DIspring.html">Dependency Injection</a>
+					</li>
+					<li><a href="./IoCspring.html" style="color:white;">Inversion of Control</a></li>
+					<li><a href="./AOPspring.html">AOP</a></li>
+					<li>
+						<a href="#">Cài đặt và sử dụng</a>
+						<ul class="sub-menudoc">
+							<li><a href="./STSspring.html">Spring Tool Suite</a></li>
+							<li><a href="./Maven.html">Maven</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="text">
+				<h3>Khái niệm Inversion of Control</h3><br>
+				<p>Đầu tiên ta sẽ xem một số các class:<br></p>
+				<div class="vanban">
+					<img src="Hinhanh/ioc1.PNG"><br><br>
+					Ta có thể thấy rằng lóp HelloWorldService quản lý việc tạo ra đối tượng HelloWorld. 
+					Trong trường hợp trên khi một đối tượng HelloWorldService được tạo ra từ phương thức khởi tạo của nó, 
+					thì một đối tượng HelloWorld cũng được tạo ra và được tạo từ lớp StrutsHelloWorld.
+					<br><br>
+					Như vậy ở đây là HelloWorldService đang điều khiển “object creation” của HelloWorld. 
+					Tại sao chúng ta không chuyển việc ta ra HelloWorld cho một bên thứ 3 xử lý thay vì làm ở HelloWorldService. 
+					Chúng ta có khái niệm “inversion of control” nghĩa là sự đảo ngược điều khiển. 
+					Và IoC Container sẽ đóng vai trò người quản lý việc tạo ra cả HelloWorldService và HelloWorld<br>
+					<img src="Hinhanh/ioc2.PNG"><br><br>
+					IoC Container tạo ra đối tượng HelloWorldService và đối tượng HelloWorld rồi truyền HelloWorld cho HelloWorldService thông qua setter. 
+					Việc IoC đang làm là “tiêm sự phụ thuộc” (Dependency Injection) vào HelloWorldService. 
+					Sự phụ thuộc ở đây là sự phụ thuộc giữa các object: HelloWorldService và HelloWorld
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="thongtin">
+				Email: vinacafe11vn@gmail.com
+			</div>
+			<div id="menucuoi">
+				<ul>
+					<li><a href="./Home.html">Home</a></li>
+					<li><a href="./DangKy.html">Đăng ký</a></li>
+					<li><a href="./LienHe.html">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div id="copyright">Copyright 2018 &copy; Trương Hoàng Dương</div>
+		</div>
+	</body>
+</html>

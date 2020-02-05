@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>Các Kiểu Dữ Liệu Cơ Bản</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type"text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="header">
+			<a href="./Home.html" target="_self" style="text-decoration: none;"><img id="banner" src="Hinhanh/2.PNG"></a>
+			<div id="menu">
+				<ul>
+					<li><a href="./Home.html"> Home </a></li>
+					<li>
+						<a href="#" style="color:#F9F400"> Học Java </a>
+						<ul class="sub-menu">
+							<li><a href="./JavaCoBan.html">Cơ bản</a></li>
+							<li><a href="./JavaSpring.html">Java Spring</a></li>
+						</ul>
+					</li>
+					<li><a href="./LienHe.html"> Liên Hệ </a></li>
+					<li><a href="./GioiThieu.html"> Giới Thiệu </a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100005361367805" target="_blank"> Fanpage </a></li> 
+					<li><a href="./DangNhap.html"> Đăng Nhập </a></li> 
+					<li><a href="./DangKy.html"> Đăng Ký </a></li> 
+				</ul>
+				
+			</div>
+		</div>
+		<div id="content" style="height:2300px;">
+			<div id="right">
+				<a href="#"><img src="Hinhanh/quangcao2.PNG"></a>
+				<p><a href="#">Hosting tốc độ nhanh, bảo mật, ổn định</a></p>
+				<a href="#"><img src="Hinhanh/quangcao8.PNG"></a>
+				<p><a href="#">Mở khóa học lập trình Ruby</a></p>
+				<a href="#"><img src="Hinhanh/quangcao10.PNG"></a>
+				<p><a href="#">Trọn bộ khóa học thiết kế Website</a></p>
+				<a href="#"><img src="Hinhanh/quangcao5.PNG"></a>
+				<p><a href="#">3 loại thiết kế banner bạn nên biết</a></p>
+			</div>
+			<div id="menudoc">
+				<ul>
+					<li><a href="./Kieudulieu.html" style="color:white;">Các kiểu dữ kiệu cơ bản</a></li>
+					<li><a href="./Array.html">Array</a></li>
+					<li>
+						<a href="#">Vòng lặp</a>
+						<ul class="sub-menudoc">
+							<li><a href="./For.html">For</a></li>
+							<li><a href="./While.html">While</a></li>
+							<li><a href="./Dowhile.html">Do-while</a></li>
+						</ul>
+					</li>
+					<li><a href="./Ifelse.html">If-else</a></li>
+					<li><a href="./Switchcase.html">Switch-case</a></li>
+					<li><a href="./Lopvadoituong.html">Lớp và đối tượng</a></li>
+				</ul>
+			</div>
+			<div id="text">
+				<h3>Các kiểu dữ liệu cơ bản</h3>
+				<p>1. Tổng quan các kiểu dữ liệu:<br></p>
+				<div class="vanban">
+					Java có 2 loại kiểu dữ liệu:
+					<ul>
+						<li>Các kiểu dữ liệu nguyên thủy</li>
+						<li> Các kiểu dữ liệu tham chiếu</li>
+					</ul>
+					Có 8 kiểu dữ liệu nguyên thủy đó là: boolean, byte, char, short, int, long, float, double.
+					<img src="Hinhanh/kieudulieu.PNG">
+					<br>
+					Các kiểu tham chiếu, là các đối tượng được tạo ra bởi Constructor của các lớp.
+				</div>
+				<p>2. Byte:<br></p>
+				<div class="vanban">
+					1 byte là 8 bit nằm kề nhau trên vùng bộ nhớ của máy tính. Mỗi bit là một số nhị phân 0 hoặc 1.
+					Java lấy tên "byte" để đặt cho một kiểu số nguyên có phạm vi nhỏ.
+					<img src="Hinhanh/kieudulieu2.PNG">
+					<br>
+					bit đầu tiên trong dẫy 8 bit có giá trị là 0 hoặc 1.
+					<ul>
+						<li>Nếu là 0 Java coi nó là dấu +</li>
+						<li>Nếu là 1 Java coi nó là dấu -</li>
+					</ul>
+				</div>
+				<p>3. Boolean:<br></p>
+				<div class="vanban">
+					boolean là kiểu dữ liệu đơn giản nhất, nó có kích thước 1 bit. Nó có 2 giá trị là true và false.<br><br>
+					Giá trị mặc định cho kiểu boolean là false.
+				</div>
+				<p>4. Char:<br></p>
+				<div class="vanban">
+					Mặc dù "char" là 4 ký tự đầu tiên của từ "Character", nhưng kiểu char trong Java sử dụng để lưu trữ các số nguyên không âm có kích thước 2 byte. 
+					Nó cũng được sử dụng để đại diện cho một ký tự Unicode, vì bản chất mỗi ký đều tương ứng với một con số cụ thể.
+				</div>
+				<p>5. Short:<br></p>
+				<div class="vanban">
+					short là kiểu dữ liệu để biểu diễn một số nguyên 2 byte, bao gồm cả số nguyên âm.
+					<ul>
+						<li>Giá trị nhỏ nhất là -32,768 và giá trị lớn nhất là 32,767.</li>
+						<li>Giá trị mặc định là 0.</li>
+					</ul>
+				</div>
+				<p>6. Int:<br></p>
+				<div class="vanban">
+					Kiểu dữ liệu int được sử dụng để biểu diễn một số nguyên có kích thước 4 byte.<br><br>
+					Trong Java, kiểu dữ liệu int được coi là kiểu dữ liệu mặc định cho các số nguyên. Như vậy nếu bạn viết số 100, Java sẽ tạo ra một vùng bộ nhớ 4 byte để lưu trữ. 
+					Còn nếu bạn muốn Java tạo ra một vùng bộ nhớ 8 byte để lưu trữ số 100 bạn phải ghi là 100L.
+				</div>
+				<p>7. Long:<br></p>
+				<div class="vanban">
+					Kiểu dữ liệu long sử dụng để biểu diễn các số nguyên có kích thước lên đến 8 byte.
+				</div>
+				<p>8. Float:<br></p>
+				<div class="vanban">
+					Kiểu dữ liệu float được sử dụng để biểu diễn một số thực có kích thước 4 byte. 
+				</div>
+				<p>9. Double:<br></p>
+				<div class="vanban">
+					Kiểu dữ liệu double được sử dụng để biểu diễn một số thực (real number) có kích thước 8 byte. 
+					Nó là kiểu mặc định cho các kiểu số thực.
+				</div>
+				<p>10. Kiểu tham chiếu:<br></p>
+				<div class="vanban">
+					Trong Java một kiểu dữ liệu được tạo ra bởi sự kết hợp các kiểu nguyên thủy với nhau được gọi là kiểu tham chiếu. Kiểu tham chiếu thường được sử dụng nhất đó là String, nó là sự kết hợp của các ký tự.<br>
+					<img src="Hinhanh/kieudulieu3.PNG"><br><br>
+					Các kiểu dữ liệu tham chiếu được tạo ra dựa trên một lớp. Lớp giống như một bản thiết kế để định nghĩa một kiểu tham chiếu.
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="thongtin">
+				Email: vinacafe11vn@gmail.com
+			</div>
+			<div id="menucuoi">
+				<ul>
+					<li><a href="./Home.html">Home</a></li>
+					<li><a href="./DangKy.html">Đăng ký</a></li>
+					<li><a href="./LienHe.html">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div id="copyright">Copyright 2018 &copy; Trương Hoàng Dương</div>
+		</div>
+	</body>
+</html>
